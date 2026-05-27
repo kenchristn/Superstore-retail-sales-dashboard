@@ -31,6 +31,20 @@ This project transforms raw transactional retail data into actionable business i
 
 ---
 
+# Live Dashboard
+
+View the interactive Looker Studio dashboard here:
+
+🔗 [Open Dashboard in Looker Studio](https://datastudio.google.com/reporting/859b83ca-d1ec-4511-b70d-b43ab58de383)
+
+The dashboard includes:
+
+- Interactive date range filtering
+- State, category, segment, and ship mode filters
+- Executive KPI tracking
+- Product profitability analysis
+- Customer and operational insights
+
 # Project Overview
 
 Retail businesses generate large volumes of transactions across multiple products, customer segments, and geographic regions.
