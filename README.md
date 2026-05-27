@@ -1,4 +1,9 @@
 # Retail Sales Performance Dashboard
+![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlebigquery&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Looker Studio](https://img.shields.io/badge/Looker_Studio-4285F4?style=for-the-badge&logo=googleanalytics&logoColor=white)
+![CSV](https://img.shields.io/badge/CSV-Dataset-green?style=for-the-badge)
+![Dashboard](https://img.shields.io/badge/Interactive-Dashboard-orange?style=for-the-badge)
 
 An end-to-end retail sales analysis project using the **Superstore dataset**, built with **BigQuery SQL** and visualized through **Looker Studio**.
 
