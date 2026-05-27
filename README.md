@@ -2,58 +2,73 @@
 
 An end-to-end retail sales analysis project using the **Superstore dataset**, built with **BigQuery SQL** and visualized through **Looker Studio**.
 
-This project transforms raw transactional retail data into actionable business insights by analyzing sales trends, profitability drivers, customer behavior, and operational performance.
+This project transforms raw transactional retail data into actionable business insights by analyzing sales performance, profitability, customer behavior, and shipping operations through SQL analysis and interactive dashboard visualization.
 
-The goal is to demonstrate practical SQL analysis, dashboard storytelling, and business-focused decision making using a real-world retail dataset.
+---
+
+# Dashboard Preview
+
+## Executive Overview
+
+![Executive Overview](images/Retail_Sales_Performance_Dashboard_page-0001.jpg)
+
+---
+
+## Product & Profitability Analysis
+
+![Product & Profitability Analysis](images/Retail_Sales_Performance_Dashboard_page-0002.jpg)
+
+---
+
+## Customer & Operations Analysis
+
+![Customer & Operations Analysis](images/Retail_Sales_Performance_Dashboard_page-0003.jpg)
 
 ---
 
 # Project Overview
 
-Retail businesses often manage thousands of transactions across multiple products, customer segments, and geographic locations.
+Retail businesses generate large volumes of transactions across multiple products, customer segments, and geographic regions.
 
-Understanding which products generate profit, which regions underperform, and how customer purchasing behavior impacts revenue is critical for business growth.
+To support business decisions effectively, companies need clear visibility into:
 
-This project analyzes the Superstore dataset to answer key business questions such as:
+- Revenue performance
+- Profitability trends
+- Product contribution
+- Customer behavior
+- Operational efficiency
 
-- Which regions generate the highest sales and profit?
-- Which product categories perform best?
-- Which products consistently generate losses?
-- How does discount affect profitability?
-- Which customer segments contribute most revenue?
-- How efficient is shipping performance?
-
-The final output is a multi-page interactive dashboard designed for business stakeholders.
+This project analyzes the Superstore dataset to answer key business questions and presents the results through an interactive dashboard built for business stakeholders.
 
 ---
 
 # Business Objectives
 
-The main objectives of this analysis are:
+The main objectives of this project are:
 
 ### Sales Performance
 
-- Analyze overall sales trend over time
+- Analyze overall sales trends over time
 - Identify top-performing regions and states
 - Evaluate category and sub-category contribution
 
 ### Profitability Analysis
 
 - Identify profitable and loss-making products
-- Measure profit margin by region and category
-- evaluate discount impact on profit
+- Measure profit margin across categories and regions
+- Evaluate discount impact on profitability
 
 ### Customer Analysis
 
 - Analyze customer contribution
-- identify top customers by profit
-- evaluate segment distribution
+- Identify top customers by profit
+- Evaluate segment distribution
 
 ### Operational Analysis
 
-- Analyze shipping performance
-- measure average shipping days
-- evaluate shipping mode effectiveness
+- Measure shipping performance
+- Analyze average shipping days
+- Compare shipping mode effectiveness
 
 ---
 
@@ -61,8 +76,8 @@ The main objectives of this analysis are:
 
 | Tool | Purpose |
 |---|---|
-| BigQuery | Data storage & SQL execution |
-| SQL | Data cleaning and analysis |
+| BigQuery | Data storage and SQL execution |
+| SQL | Data cleaning and business analysis |
 | Looker Studio | Dashboard visualization |
 
 ---
@@ -70,6 +85,7 @@ The main objectives of this analysis are:
 # Dataset Information
 
 Dataset used:
+
 **Superstore Retail Sales Dataset**
 
 ### Dataset Summary
@@ -92,23 +108,23 @@ Dataset used:
 
 Initial validation was performed using SQL:
 
-### Data quality checks
+### Data Quality Checks
 
 - Check null values
-- review column consistency
-- validate records
+- Validate record consistency
+- Review dataset structure
 
-### Dataset overview
+### Dataset Overview
 
-- total rows
-- unique orders
-- unique customers
+- Total rows
+- Unique orders
+- Unique customers
 
 ---
 
 ## 2. Sales Analysis
 
-SQL analysis performed:
+Analysis performed:
 
 - Annual sales trend
 - Monthly sales trend
@@ -121,191 +137,155 @@ SQL analysis performed:
 
 Purpose:
 
-- identify revenue drivers
-- compare performance across geography
-- understand product contribution
+- Identify revenue drivers
+- Compare geographic performance
+- Understand category contribution
 
 ---
 
 ## 3. Profitability Analysis
 
-SQL analysis performed:
+Analysis performed:
 
-- Top 10 most profitable products
-- Top 10 loss-making products
-- Top loss-making states
+- Top profitable products
+- Top loss-making products
+- Profitability by state
 - Discount analysis
 - Profit by category
 - Profit by sub-category
 
 Purpose:
 
-- identify high-margin opportunities
-- detect low-performing products
-- measure discount impact
+- Identify high-margin opportunities
+- Detect low-performing products
+- Measure pricing impact
 
 ---
 
 ## 4. Customer Analysis
 
-SQL analysis performed:
+Analysis performed:
 
 - Customer contribution
 - Segment analysis
-- Customer order frequency
 - Top customers by profit
+- Customer order frequency
 
 Purpose:
 
-- identify valuable customers
-- understand segment distribution
+- Identify valuable customers
+- Understand customer behavior
 
 ---
 
 ## 5. Operations Analysis
 
-SQL analysis performed:
+Analysis performed:
 
-- Average order to shipment days
+- Average shipping days
 - Shipping mode performance
 - Average order value
 
 Purpose:
 
-- evaluate delivery performance
-- compare shipping methods
+- Evaluate delivery efficiency
+- Compare operational performance
 
 ---
 
-# Dashboard Structure
+# SQL Analysis
 
-The dashboard is organized into three sections.
+All SQL queries used in this project are included in:
 
----
-
-## 1. Executive Overview
-
-Business KPI summary:
-
-- Total Sales
-- Profit
-- Total Orders
-- Profit Margin
-- Average Order Value
-
-Visuals:
-
-- Quarterly sales trend
-- Sales by category
-- Sales by state
-- Sales by segment
-- Profit margin by region
-
-### Dashboard Preview
-
-```md
-![Executive Overview](images/dashboard-overview-page1.png)
+```txt
+sql/queries.zip
 ```
 
----
+The query archive covers:
 
-## 2. Product & Profitability Analysis
+### Data Quality
 
-Business KPI summary:
+- Check null values
+- Dataset overview
 
-- Total Profit
-- Profit Margin
-- Average Discount Rate
-- Average Profit per Order
+### Sales Performance
 
-Visuals:
+- Annual sales
+- Monthly sales
+- Sales by region
+- Sales by state
+- Sales by city
+- Sales by category
+- Sales by sub-category
+- Sales by product
+
+### Customer Analysis
+
+- Customer analysis
+- Segment analysis
+
+### Profitability Analysis
 
 - Top profitable products
 - Top loss-making products
-- Profit by sub-category
-- Sales vs profit by discount
+- Discount analysis
 - Profitability by state
 
-### Dashboard Preview
+### Operations Analysis
 
-```md
-![Product & Profitability Analysis](images/dashboard-profitability-page2.png)
-```
-
----
-
-## 3. Customer & Operations Analysis
-
-Business KPI summary:
-
-- Total customers
-- Average profit per customer
 - Average shipping days
-- Average daily order
-
-Visuals:
-
-- Top customers by profit
-- Customer order frequency
-- Customer distribution by state
 - Shipping mode performance
-- Average shipping days by ship mode
-
-### Dashboard Preview
-
-```md
-![Customer & Operations Analysis](images/dashboard-customer-page3.png)
-```
+- Average order value
 
 ---
 
 # Key Insights
 
-## 1. West region generated the highest sales and strongest profit margin
+## 1. West region delivered the strongest performance
 
-West consistently outperformed other regions.
-
----
-
-## 2. Technology was the strongest category
-
-Technology generated the highest revenue and profit.
+West generated the highest sales and strongest profit margin.
 
 ---
 
-## 3. Furniture underperformed in profitability
+## 2. Technology was the most profitable category
 
-Despite strong sales, multiple products generated low margins.
+Technology outperformed Furniture and Office Supplies.
+
+---
+
+## 3. Furniture showed weaker profitability
+
+Several furniture products generated low or negative margins.
 
 ---
 
 ## 4. Losses were concentrated in specific products
 
-Tables and bookcases showed repeated negative profit.
+Products such as tables and bookcases consistently generated losses.
 
 ---
 
 ## 5. Discounts reduced profitability
 
-Higher discounts were associated with lower margins and losses.
+Higher discount levels were associated with lower margins and increased losses.
 
 ---
 
-## 6. Consumer segment contributed the largest sales share
+## 6. Consumer segment contributed the highest sales share
 
-This segment represented the largest portion of revenue.
+Consumer represented the largest portion of total revenue.
 
 ---
 
-## 7. A small group of customers drove significant profit
+## 7. A small number of customers generated significant profit
 
 Top customers contributed disproportionately to profitability.
 
 ---
 
-## 8. Standard Class handled the highest order volume
+## 8. Standard Class handled the largest order volume
 
-Shipping remained relatively efficient.
+Shipping performance remained relatively efficient.
 
 ---
 
@@ -313,30 +293,30 @@ Shipping remained relatively efficient.
 
 Based on the analysis:
 
-### Pricing
+### Pricing Strategy
 
-- review discount strategy
-- reduce excessive discounting
+- Review discount policies
+- Reduce excessive discounting on low-margin products
 
 ### Product Strategy
 
-- prioritize high-margin products
-- evaluate loss-making inventory
+- Prioritize profitable product categories
+- Evaluate loss-making inventory
 
 ### Regional Strategy
 
-- improve underperforming states
-- replicate successful regions
+- Improve underperforming states
+- Replicate successful regional strategies
 
 ### Customer Strategy
 
-- retain high-value customers
-- strengthen customer engagement
+- Retain high-value customers
+- Strengthen customer engagement
 
-### Operations
+### Operations Strategy
 
-- optimize shipping performance
-- improve slower delivery modes
+- Optimize shipping performance
+- Improve slower delivery methods
 
 ---
 
@@ -349,13 +329,15 @@ superstore-retail-sales-dashboard/
 │   └── Sales Data - DATA.csv
 │
 ├── sql/
-│   ├── SQL query files
+│   └── queries.zip
 │
 ├── dashboard/
 │   └── Retail_Sales_Performance_Dashboard.pdf
 │
 ├── images/
-│   └── dashboard screenshots
+│   ├── Retail_Sales_Performance_Dashboard_page-0001.jpg
+│   ├── Retail_Sales_Performance_Dashboard_page-0002.jpg
+│   └── Retail_Sales_Performance_Dashboard_page-0003.jpg
 │
 └── README.md
 ```
